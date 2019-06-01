@@ -1,0 +1,71 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	x:Class="SuperMarioBros.MainPage"
+	Width="768" Height="672">
+
+	<UserControl.Resources>
+		<Image x:Key="Tile_Block" Source="Images/Tiles/block.png" />
+		<Image x:Key="Tile_Brick" Source="Images/Tiles/brick.png" />
+		<Image x:Key="Tile_Ground" Source="Images/Tiles/ground.png" />
+		<Image x:Key="Tile_Question" Source="Images/Tiles/question_block.png" />
+		<Image x:Key="Tile_Pipe_Rim_Left" Source="Images/Tiles/pipe_rim_left.png" />
+		<Image x:Key="Tile_Pipe_Rim_Right" Source="Images/Tiles/pipe_rim_right.png" />
+		<Image x:Key="Tile_Pipe_Shaft_Left" Source="Images/Tiles/pipe_shaft_left.png" />
+		<Image x:Key="Tile_Pipe_Shaft_Right" Source="Images/Tiles/pipe_shaft_right.png" />
+
+		<Image x:Key="Shrubbery_Left" Source="Images/Tiles/shrubbery_left.png" />
+		<Image x:Key="Shrubbery_Center" Source="Images/Tiles/shrubbery_center.png" />
+		<Image x:Key="Shrubbery_Right" Source="Images/Tiles/shrubbery_right.png" />
+		<Image x:Key="Hill_Left" Source="Images/Tiles/hill_left.png" />
+		<Image x:Key="Hill_Solid" Source="Images/Tiles/hill_solid.png" />
+		<Image x:Key="Hill_Right" Source="Images/Tiles/hill_right.png" />
+		<Image x:Key="Hill_Spots" Source="Images/Tiles/hill_spots.png" />
+		<Image x:Key="Hill_Top" Source="Images/Tiles/hill_top.png" />
+		<Image x:Key="Cloud_Top_Left" Source="Images/Tiles/cloud_top_left.png" />
+		<Image x:Key="Cloud_Top_Center" Source="Images/Tiles/cloud_top_center.png" />
+		<Image x:Key="Cloud_Top_Right" Source="Images/Tiles/cloud_top_right.png" />
+		<Image x:Key="Cloud_Bottom_Left" Source="Images/Tiles/cloud_bottom_left.png" />
+		<Image x:Key="Cloud_Bottom_Center" Source="Images/Tiles/cloud_bottom_center.png" />
+		<Image x:Key="Cloud_Bottom_Right" Source="Images/Tiles/cloud_bottom_right.png" />
+
+		<Image x:Key="Sprite_Coin_1" Source="Images/Sprites/coin.png" />
+		<Image x:Key="Sprite_Mushroom" Source="Images/Sprites/mushroom.png" />
+
+		<Image x:Key="Sprite_Goomba_1" Source="Images/Sprites/goomba_1.png" />
+		<Image x:Key="Sprite_Goomba_2" Source="Images/Sprites/goomba_2.png" />
+
+		<Image x:Key="Mario_Dead" Source="Images/Mario/mario_dead.png" />
+
+		<Image x:Key="Mario_Left_Stand" Source="Images/Mario/mario_left_stand.png" />
+		<Image x:Key="Mario_Right_Stand" Source="Images/Mario/mario_right_stand.png" />
+
+		<Image x:Key="Mario_Left_Walk_1" Source="Images/Mario/mario_left_walk_1.png" />
+		<Image x:Key="Mario_Left_Walk_2" Source="Images/Mario/mario_left_walk_2.png" />
+		<Image x:Key="Mario_Left_Walk_3" Source="Images/Mario/mario_left_walk_3.png" />
+		<Image x:Key="Mario_Right_Walk_1" Source="Images/Mario/mario_right_walk_1.png" />
+		<Image x:Key="Mario_Right_Walk_2" Source="Images/Mario/mario_right_walk_2.png" />
+		<Image x:Key="Mario_Right_Walk_3" Source="Images/Mario/mario_right_walk_3.png" />
+
+		<Image x:Key="Mario_Left_Jump" Source="Images/Mario/mario_left_jump.png" />
+		<Image x:Key="Mario_Right_Jump" Source="Images/Mario/mario_right_jump.png" />
+
+		<Style x:Key="TextBlock_style" TargetType="TextBlock">
+			<Setter Property="Foreground" Value="White" />
+			<Setter Property="FontFamily" Value="Fonts/Fonts.zip#ArcadeClassic"/>
+			<Setter Property="FontSize" Value="24" />
+		</Style>
+	</UserControl.Resources>
+	
+	<Grid>
+		<MediaElement x:Name="SFX_1" AutoPlay="True" Source="Sounds/Coin.mp3" Volume="0"/>
+		<MediaElement x:Name="SFX_2" AutoPlay="True" Source="Sounds/Coin.mp3" Volume="0"/>
+		<Border x:Name="LayoutRoot" Background="Black">
+			<!--TextBlock Height="26" HorizontalAlignment="Right" Margin="0,7,15,0" VerticalAlignment="Top" Width="161" Text="TIME: 300" TextWrapping="Wrap" /-->
+		</Border>
+		<TextBlock x:Name="TextTemplate" Margin="171,180,308,0" VerticalAlignment="Top" FontFamily="Fonts/Fonts.zip#ArcadeClassic" FontSize="32" Foreground="#FFF6F6F6" TextWrapping="Wrap" Visibility="Collapsed"/>
+		<Grid Background="Transparent">
+			<TextBlock x:Name="DebugText" Text="" />
+		</Grid>
+	</Grid>
+</UserControl>
