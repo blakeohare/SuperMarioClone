@@ -1,5 +1,3 @@
 # SuperMarioClone
 
-A Super Mario Bros clone I created in 2008-ish
-
-This was written in Silverlight back in the day. One day I'll port this to Crayon.
+A Super Mario Bros clone I created in 2008-ish in Silverlight. Ported to Crayon in 2019.
